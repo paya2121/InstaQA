@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Suite" parallel="tests">
+ 
+ <test name="FirefoxTest">
+ 
+ <parameter name="browser" value="firefox" />
+ 
+ <classes>
+ 
+ <class name="instatest.scenario1" />
+ <class name="instatest.scenario2" />
+
+ 
+ </classes>
+ 
+ </test>
+ 
+ <test name="IETest">
+ 
+ <parameter name="browser" value="ie" />
+ 
+ <classes>
+ 
+ <class name="instatest.scenario1" />
+  <class name="instatest.scenario2" />
+ 
+ </classes>
+ 
+ </test>
+ 
+ <test name="ChromeTest">
+ 
+ <parameter name="browser" value="chrome" />
+ 
+ <classes>
+ 
+ <class name="instatest.scenario1" />
+
+ </classes>
+ 
+ </test>
+ 
+</suite>
